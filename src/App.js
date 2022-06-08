@@ -9,12 +9,30 @@ const useStyles = makeStyles({
     border: "1.5px solid #e37f1c",
     borderRadius: 0,
     padding: "7px 30px",
-    marginTop: "20px"
-  }
+    marginTop: "20px",
+  },
 });
 
 export default function App() {
   const classes = useStyles();
+
+  const getUserFromUUID = (uuid) => {
+    /*
+    var user = users.filter(obj => {
+      return obj.uuid === uuid
+    })[0]
+    return user
+    */
+  };
+
+  const getUserIndexFromUUID = (uuid) => {
+    /*
+    var userIndex = users.map(function(e) {
+      return e.uuid;
+    }).indexOf(uuid);
+    return userIndex
+    */
+  };
 
   return (
     <div className="App">
